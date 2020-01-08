@@ -17,7 +17,10 @@ class UserController < Sinatra::Base
         redirect '/users'
     end
 
-    
+    get '/users/:id' do
+        @user = params[:id]
+        erb :show
+    end
         
 
 end

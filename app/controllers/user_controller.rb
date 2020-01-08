@@ -18,9 +18,10 @@ class UserController < Sinatra::Base
     end
 
     get '/users/:id' do
-        @user = params[:id]
+        @user = User.find(params[:id])
         erb :show
     end
+        
         
 
 end

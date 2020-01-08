@@ -1,11 +1,21 @@
 class UserController < Sinatra::Base
 
-    set :views, 'app/views/user' #if failure, add / before app
+    set :views, 'app/views/user' 
     set :method_override, true
 
     get '/users' do
         @users = User.all
         erb :index
     end
+
+    get '/users/new' do
+        erb :new
+    end
+
+    post '/users' do
+        @n_user = User.create(params)
+        redirect '/users'
+    end
+        
 
 end

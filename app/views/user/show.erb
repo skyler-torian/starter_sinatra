@@ -14,6 +14,10 @@
             <% end %>
                
             </ol>
+            <form action="/users/<%= @user.id%>" method="POST">
+            <input type="hidden" value="DELETE" name="_method">
+            <input type="submit" value="Delete this user">
+            </form>
 
     
     <a href="/users">Back to all users</a>

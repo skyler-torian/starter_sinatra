@@ -21,6 +21,11 @@ class UserController < Sinatra::Base
         @user = User.find(params[:id])
         erb :show
     end
+
+    delete '/users/:id' do
+        User.delete(params[:id])
+        redirect '/users'
+    end
     
         
         

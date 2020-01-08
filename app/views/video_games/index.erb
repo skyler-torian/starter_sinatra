@@ -7,11 +7,12 @@
 <body>
     <h1>Video Games Index:</h1>
     <ul><%@video_games.each do |vg|%>
-    <li><%= vg.title%></li>
+    <li><a href="/video_games/<%=vg.id%>"><%= vg.title%></a></li>
     <% end%>
     </ul>
 
     <p><a href='/'>Return to home page</a><p>
+    <p><a href='/video_games/new'>Add a new game</a><p>
 
 
 </body>

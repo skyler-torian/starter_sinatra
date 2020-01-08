@@ -12,6 +12,12 @@ class VideoGameController < Sinatra::Base
         erb :new
     end
 
+    get '/video_games/:id' do
+        vg_id = params[:id]
+        @video_game = VideoGame.find(vg_id)
+        erb :show
+    end
+
     post '/video_games' do
         title = params[:title]
         genre = params[:genre]

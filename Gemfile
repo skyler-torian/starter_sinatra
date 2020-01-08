@@ -10,7 +10,7 @@ source "https://rubygems.org"
 # gem 'shotgun'
 # gem 'sinatra'
 
-gem 'activerecord', '5.2.3'
+gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'rake'
 gem 'sqlite3'

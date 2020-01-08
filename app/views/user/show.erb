@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title><%=@user.name%>s page</title>
+</head>
+
+<body>
+    <h1>This is <%=@user.name%>s page </h1>
+   
+      <h3>Videogames owned by this user:</h3>
+            <ol>
+            <% @user.video_games.each do |games|%>
+                <li><%= games.title%></li>
+            <% end %>
+               
+            </ol>
+
+    </br>
+    <a href="/users">Back to all users</a>
+    
+
+
+</body>
+
+</html>

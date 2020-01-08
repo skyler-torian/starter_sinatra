@@ -27,5 +27,10 @@ class VideoGameController < Sinatra::Base
         redirect "/video_games"
     end
 
+    delete '/video_games/:id' do
+        VideoGame.delete(params[:id])
+        redirect '/video_games'
+    end
+
 
 end

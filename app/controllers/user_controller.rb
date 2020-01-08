@@ -19,6 +19,8 @@ class UserController < Sinatra::Base
 
     get '/users/:id' do
         @user = User.find(params[:id])
+        # user_id = 
+        # @games = VideoGame.find(id)
         erb :show
     end
         

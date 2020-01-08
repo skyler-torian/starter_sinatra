@@ -4,6 +4,7 @@ class VideoGameController < Sinatra::Base
     set :method_override, true
 
     get '/video_games' do
+        @video_games = VideoGame.all
         erb :index
     end
 

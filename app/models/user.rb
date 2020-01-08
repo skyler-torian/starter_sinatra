@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
-    has_many :videogames
+    has_many :video_games
 
 end

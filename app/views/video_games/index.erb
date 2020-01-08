@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Game Index</title>
+</head>
+
+<body>
+    <h1>Video Games Index:</h1>
+    <ul><%@video_games.each do |vg|%>
+    <li><%= vg.title%></li>
+    <% end%>
+    </ul>
+
+
+</body>
+
+</html>

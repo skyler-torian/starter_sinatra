@@ -16,6 +16,8 @@ class UserController < Sinatra::Base
         @n_user = User.create(params)
         redirect '/users'
     end
+
+    
         
 
 end
